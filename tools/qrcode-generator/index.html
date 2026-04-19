@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - WebTool</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html" class="back-btn">← Kembali</a>
+        <h1>🔳 QR Code Generator</h1>
+        <p>Buat QR Code dari teks atau URL dengan mudah</p>
+    </header>
+    
+    <main class="qrcode-container">
+        <div class="input-section">
+            <div class="form-group">
+                <label for="qr-text">Teks atau URL</label>
+                <textarea 
+                    id="qr-text" 
+                    placeholder="Masukkan teks, URL, atau konten yang ingin dijadikan QR Code..."
+                    rows="4"
+                ></textarea>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="qr-size">Ukuran (px)</label>
+                    <input type="number" id="qr-size" value="256" min="128" max="512" step="64">
+                </div>
+                
+                <div class="form-group">
+                    <label for="qr-color">Warna QR</label>
+                    <input type="color" id="qr-color" value="#000000">
+                </div>
+                
+                <div class="form-group">
+                    <label for="qr-bg-color">Warna Background</label>
+                    <input type="color" id="qr-bg-color" value="#ffffff">
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button id="generate-btn" class="btn btn-primary">Generate QR Code</button>
+                <button id="download-btn" class="btn btn-success" disabled>Download PNG</button>
+                <button id="clear-btn" class="btn btn-secondary">Clear</button>
+            </div>
+        </div>
+        
+        <div class="preview-section">
+            <h2>Preview</h2>
+            <div id="qrcode-container" class="qrcode-preview">
+                <div class="placeholder">
+                    <p>QR Code akan muncul di sini</p>
+                </div>
+            </div>
+            <p class="hint">💡 Tips: Scan QR Code ini dengan kamera smartphone Anda</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 WebTool - QR Code Generator</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Umur Kucing - WebTool</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="cat-age-converter.css">
+</head>
+<body>
+    <header>
+        <h1>🐱 Konversi Umur Kucing</h1>
+        <p>Hitung umur kucing Anda dalam tahun manusia</p>
+        <a href="../../index.html" class="back-link">← Kembali ke Dashboard</a>
+    </header>
+    
+    <main>
+        <div class="converter-container">
+            <div class="input-section">
+                <label for="catAge">Masukkan umur kucing (tahun):</label>
+                <input type="number" id="catAge" min="0" max="30" step="0.5" placeholder="Contoh: 2">
+                <button onclick="convertAge()">Konversi</button>
+            </div>
+            
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-card">
+                    <h2>Hasil Konversi</h2>
+                    <div class="result-display">
+                        <div class="age-circle cat">
+                            <span class="age-value" id="catAgeValue">0</span>
+                            <span class="age-label">Tahun Kucing</span>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="age-circle human">
+                            <span class="age-value" id="humanAgeValue">0</span>
+                            <span class="age-label">Tahun Manusia</span>
+                        </div>
+                    </div>
+                    <p class="description" id="description"></p>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>📊 Bagaimana Perhitungannya?</h3>
+                <ul>
+                    <li><strong>Tahun pertama</strong> kucing ≈ 15 tahun manusia</li>
+                    <li><strong>Tahun kedua</strong> kucing ≈ +9 tahun manusia (total 24)</li>
+                    <li><strong>Tahun ketiga dan seterusnya</strong> ≈ +4 tahun manusia per tahun</li>
+                </ul>
+                <p class="note">*Perhitungan ini adalah estimasi umum. Umur kucing dapat bervariasi berdasarkan breed, kesehatan, dan gaya hidup.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 WebTool</p>
+    </footer>
+    
+    <script src="cat-age-converter.js"></script>
+</body>
+</html>

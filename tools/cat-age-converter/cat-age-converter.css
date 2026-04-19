@@ -1,0 +1,204 @@
+.converter-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.input-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-section label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.input-section input {
+    width: 150px;
+    padding: 12px;
+    font-size: 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.input-section input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.input-section button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.input-section button:hover {
+    background: #357abd;
+}
+
+.result-section {
+    margin-bottom: 30px;
+}
+
+.result-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-card h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.result-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.age-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.age-circle:hover {
+    transform: scale(1.05);
+}
+
+.age-circle.cat {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    border: 4px solid #ff9a9e;
+}
+
+.age-circle.human {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: 4px solid #a1c4fd;
+}
+
+.age-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.age-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.arrow {
+    font-size: 3em;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.info-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.info-section li:last-child {
+    border-bottom: none;
+}
+
+.info-section li strong {
+    color: #4a90e2;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+    margin-top: 15px;
+    padding: 10px;
+    background: #fff3cd;
+    border-radius: 6px;
+    border-left: 4px solid #ffc107;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .result-display {
+        flex-direction: column;
+    }
+    
+    .arrow {
+        transform: rotate(90deg);
+    }
+    
+    .age-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .age-value {
+        font-size: 2em;
+    }
+}

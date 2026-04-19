@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Angka</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .converter-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .converter-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .converter-container input[type="text"],
+        .converter-container select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .converter-container button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .converter-container button:hover {
+            background-color: #0056b3;
+        }
+        .result-area {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Konversi Angka</h1>
+        <p>Konversi antara Biner, Oktal, Desimal, Heksadesimal</p>
+    </header>
+    <main>
+        <div class="converter-container">
+            <label for="inputValue">Masukkan Angka:</label>
+            <input type="text" id="inputValue" placeholder="Masukkan angka yang akan dikonversi">
+
+            <label for="inputBase">Basis Input:</label>
+            <select id="inputBase">
+                <option value="2">Biner (Base 2)</option>
+                <option value="8">Oktal (Base 8)</option>
+                <option value="10" selected>Desimal (Base 10)</option>
+                <option value="16">Heksadesimal (Base 16)</option>
+            </select>
+
+            <button onclick="convertNumber()">Konversi</button>
+
+            <div class="result-area" id="resultArea">
+                Hasil Konversi akan muncul di sini.
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 WebTool</p>
+    </footer>
+
+    <script>
+        function convertNumber() {
+            const inputValue = document.getElementById('inputValue').value;
+            const inputBase = parseInt(document.getElementById('inputBase').value);
+            const resultArea = document.getElementById('resultArea');
+
+            if (!inputValue) {
+                resultArea.textContent = "Mohon masukkan angka.";
+                return;
+            }
+
+            let decimalValue;
+            try {
+                decimalValue = parseInt(inputValue, inputBase);
+                if (isNaN(decimalValue)) {
+                    throw new Error("Input tidak valid untuk basis yang dipilih.");
+                }
+            } catch (error) {
+                resultArea.textContent = `Error: ${error.message}`;
+                return;
+            }
+
+            const binary = decimalValue.toString(2);
+            const octal = decimalValue.toString(8);
+            const decimal = decimalValue.toString(10);
+            const hexadecimal = decimalValue.toString(16).toUpperCase();
+
+            resultArea.innerHTML = `
+                <b>Input:</b> ${inputValue} (Basis ${inputBase})<br><br>
+                <b>Biner (Base 2):</b> ${binary}<br>
+                <b>Oktal (Base 8):</b> ${octal}<br>
+                <b>Desimal (Base 10):</b> ${decimal}<br>
+                <b>Heksadesimal (Base 16):</b> ${hexadecimal}
+            `;
+        }
+    </script>
+</body>
+</html>

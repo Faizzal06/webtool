@@ -1,0 +1,79 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.9/http/server.py", line 1296, in <module>
+    test(
+  File "/usr/lib/python3.9/http/server.py", line 1251, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/usr/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.9/http/server.py", line 1294, in server_bind
+    return super().server_bind()
+  File "/usr/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [31/Mar/2026 13:05:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [31/Mar/2026 17:51:29] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [31/Mar/2026 17:51:30] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/Mar/2026 17:51:31] code 404, message File not found
+127.0.0.1 - - [31/Mar/2026 17:51:31] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Mar/2026 17:58:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [31/Mar/2026 17:58:57] "GET /tools/number-converter/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [31/Mar/2026 17:59:51] "GET /tools/number-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [31/Mar/2026 23:08:37] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [31/Mar/2026 23:08:38] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/Mar/2026 23:08:38] code 404, message File not found
+127.0.0.1 - - [31/Mar/2026 23:08:38] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [31/Mar/2026 23:08:40] "GET /tools/number-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [31/Mar/2026 23:08:45] "GET /tools/temperature/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [31/Mar/2026 23:08:47] "GET /tools/calculator/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Apr/2026 22:04:41] code 404, message File not found
+127.0.0.1 - - [03/Apr/2026 22:04:41] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Apr/2026 20:59:16] code 404, message File not found
+127.0.0.1 - - [04/Apr/2026 20:59:16] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Apr/2026 20:59:21] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Apr/2026 20:59:22] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Apr/2026 12:15:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Apr/2026 21:07:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2026 11:49:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2026 11:49:21] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2026 11:49:22] code 404, message File not found
+127.0.0.1 - - [13/Apr/2026 11:49:22] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [13/Apr/2026 11:49:23] "GET /tools/cat-age-converter/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2026 11:49:24] "GET /tools/cat-age-converter/cat-age-converter.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2026 11:49:24] "GET /tools/cat-age-converter/cat-age-converter.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2026 11:50:01] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2026 11:50:11] "GET /tools/cat-age-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 11:51:13] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 11:51:15] "GET /tools/temperature/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 11:51:18] "GET /tools/number-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 11:51:21] "GET /tools/calculator/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 11:51:23] "GET /tools/cat-age-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 11:53:22] "GET /tools/cat-age-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 12:09:30] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [13/Apr/2026 12:09:32] "GET /tools/cat-age-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Apr/2026 06:28:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Apr/2026 12:39:10] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [17/Apr/2026 12:39:11] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Apr/2026 12:39:12] code 404, message File not found
+127.0.0.1 - - [17/Apr/2026 12:39:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [17/Apr/2026 12:39:15] "GET /tools/cat-age-converter/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [17/Apr/2026 12:39:16] "GET /tools/cat-age-converter/cat-age-converter.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Apr/2026 12:39:16] "GET /tools/cat-age-converter/cat-age-converter.js HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:40:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:40:41] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:40:42] code 404, message File not found
+127.0.0.1 - - [19/Apr/2026 19:40:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [19/Apr/2026 19:40:44] "GET /tools/qrcode-generator/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:40:44] "GET /tools/qrcode-generator/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:40:44] "GET /tools/qrcode-generator/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:41:31] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:42:34] "GET /tools/calculator/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:42:37] "GET /tools/cat-age-converter/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:42:38] "GET /tools/cat-age-converter/cat-age-converter.css HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:42:38] "GET /tools/cat-age-converter/cat-age-converter.js HTTP/1.1" 200 -
+127.0.0.1 - - [19/Apr/2026 19:42:46] "GET /tools/qrcode-generator/index.html HTTP/1.1" 304 -
