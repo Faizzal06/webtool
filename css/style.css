@@ -217,3 +217,394 @@ button:hover {
         font-size: 0.9rem;
     }
 }
+/* SEO & Accessibility improvements */
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0.5rem auto 0;
+    padding: 0 1rem;
+}
+
+.intro {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.intro h2 {
+    color: #4a6fa5;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.tool-description {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.back-btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.back-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Footer navigation */
+footer nav {
+    background: transparent;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 0.5rem;
+}
+
+footer nav a:hover {
+    text-decoration: none;
+}
+
+/* QR Code Generator styles */
+.qrcode-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.input-section {
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a6fa5;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-row .form-group {
+    margin-bottom: 0;
+}
+
+.form-row input[type="number"],
+.form-row input[type="color"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.form-row input[type="color"] {
+    height: 45px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.button-group button {
+    flex: 1;
+    min-width: 150px;
+}
+
+.btn-primary {
+    background: #4a6fa5;
+}
+
+.btn-primary:hover {
+    background: #3a5a80;
+}
+
+.btn-success {
+    background: #28a745;
+}
+
+.btn-success:hover {
+    background: #218838;
+}
+
+.btn-success:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.preview-section {
+    text-align: center;
+}
+
+.preview-section h2 {
+    color: #4a6fa5;
+    margin-bottom: 1.5rem;
+}
+
+.qrcode-preview {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcode-preview .placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.qrcode-preview canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.hint {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Cat Age Converter styles */
+.converter-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #4a6fa5;
+}
+
+.input-section input {
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+.input-section button {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    padding: 0.75rem 2rem;
+}
+
+.result-section {
+    margin-bottom: 2rem;
+}
+
+.result-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result-card h2 {
+    color: #4a6fa5;
+    margin-bottom: 1.5rem;
+}
+
+.result-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.age-circle {
+    background: #4a6fa5;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 50%;
+    min-width: 150px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.age-circle.cat {
+    background: #4a6fa5;
+}
+
+.age-circle.human {
+    background: #28a745;
+}
+
+.age-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.age-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #4a6fa5;
+}
+
+.description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.info-section {
+    background: #e8f4fc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.info-section h3 {
+    color: #4a6fa5;
+    margin-bottom: 1rem;
+}
+
+.info-section ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Temperature converter */
+#results p {
+    background: #e8f4fc;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Number converter */
+.result-area {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin-top: 1.5rem;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    header, footer, nav, .button-group, button {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .tool-box, .converter-container, .qrcode-container {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

@@ -1,0 +1,23 @@
+# Robots.txt untuk WebTool Dashboard
+# File ini mengatur bagaimana search engine mengakses website
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://webtool.yourdomain.com/sitemap.xml
+
+# Crawl-delay untuk mengurangi beban server (opsional)
+Crawl-delay: 1
+
+# Block akses ke file sensitif
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /nohup.out
+Disallow: /*.log$
+Disallow: /css/*.css$
+Disallow: /js/*.js$
+
+# Allow akses ke halaman tools
+Allow: /tools/
+Allow: /tools/*/index.html

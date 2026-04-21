@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://webtool.yourdomain.com/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Cat Age Converter -->
+  <url>
+    <loc>https://webtool.yourdomain.com/tools/cat-age-converter/index.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Calculator -->
+  <url>
+    <loc>https://webtool.yourdomain.com/tools/calculator/index.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Temperature Converter -->
+  <url>
+    <loc>https://webtool.yourdomain.com/tools/temperature/index.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Number Converter -->
+  <url>
+    <loc>https://webtool.yourdomain.com/tools/number-converter/index.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- QR Code Generator -->
+  <url>
+    <loc>https://webtool.yourdomain.com/tools/qrcode-generator/index.html</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

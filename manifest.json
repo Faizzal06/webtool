@@ -1,0 +1,29 @@
+{
+  "name": "WebTool Dashboard",
+  "short_name": "WebTool",
+  "description": "Kumpulan tool online gratis untuk kebutuhan sehari-hari",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f4f4",
+  "theme_color": "#4a6fa5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "lang": "id-ID",
+  "dir": "ltr"
+}
